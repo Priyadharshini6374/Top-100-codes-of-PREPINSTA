@@ -1,0 +1,17 @@
+// 11. reverse a number -- 2.50pm
+
+import java.util.Scanner;
+public class reverse{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a number: ");
+        int number = scan.nextInt();
+        int reversed =0;
+        while(number!=0){
+            reversed = (reversed*10)+(number%10);
+            number/=10;
+
+        }
+        System.out.print("Reversed number: " +reversed);
+    }
+}
