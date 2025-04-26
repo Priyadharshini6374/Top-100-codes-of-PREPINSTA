@@ -1,0 +1,28 @@
+// 25.05.25 --3.35 pm
+// perfect number -- sum of its proper divisors(excluding itself)
+// eg: 6,28
+
+import java.util.Scanner;
+public class PerfectNumber{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a number: ");
+        int number = scan.nextInt();
+        int given_number = number;
+        int sum=0;
+
+        for(int i= 1; i<number;i++){
+            if(number%i==0){
+                // System.out.print(i +" ");
+                sum+=i;
+            
+            }
+        }
+        if(given_number==sum){
+            System.out.println("perfect number");
+        }
+        else{
+            System.out.println(" not a perfect number");
+        }
+    }
+}
